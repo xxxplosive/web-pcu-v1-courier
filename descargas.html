@@ -1,0 +1,704 @@
+<script src="/cdn-cgi/apps/head/c9tEh4G7R9EE5BPPFVgc9tXx3Y4.js"></script><script>
+  window.addEventListener("hashchange", function () {
+      window.scrollTo(window.scrollX, window.scrollY - 100);
+  });
+
+      // Cuando el usuario se desplaza hacia abajo 20 px.
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+      } else {
+        document.getElementById("myBtn").style.display = "none";
+      }
+    }
+
+    function topFunction() {
+      document.body.scrollTop = 0; // Safari
+      document.documentElement.scrollTop = 0; // Chrome, firefox, etc.
+    }
+  </script>
+<style>
+
+        .row {
+            margin-top: 10px;
+            padding: 0 10px;
+        }
+
+
+        .oaerror p {
+            margin: 0;
+        }
+
+        .error-notice {
+            margin: 5px 5px; /* Making sure to keep some distance from all side */
+        }
+
+        .oaerror {
+            width: 100%; /* Configure it fit in your design  */
+            margin: 0 auto; /* Centering Stuff */
+            background-color: #FFFFFF; /* Default background */
+            padding: 20px;
+            border: 1px solid #eee;
+            border-left-width: 5px;
+            border-radius: 3px;
+            margin: 0 auto;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 14px;
+        }
+
+        .oaerror h5{
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .danger hr {
+            background: #d9534f;
+        }
+
+        .danger {
+            border-left-color: #d9534f; /* Left side border color */
+        }
+
+
+        .warning hr {
+            background:#f0ad4e;
+        }
+        .warning {
+            border-left-color: #f0ad4e;
+        }
+
+        .info hr{
+            background: #5bc0de;
+        }
+        .info {
+            border-left-color: #5bc0de;
+        }
+
+        .success hr{
+            background: #2b542c;
+        }
+        .success {
+            border-left-color: #2b542c;
+        }
+
+		.agustinprs hr{
+            background: #FF9900;
+        }
+        .agustinprs {
+            border-left-color: #FF9900;
+        }
+
+        .sort hr{
+            background: #000000;
+        }
+        .sort {
+            border-left-color: #000000;
+        }
+
+        .gult hr{
+            background: #FFD700;
+        }
+        .gult {
+            border-left-color: #FFD700;
+        }
+
+        .lightgreen hr{
+            background: #ADFF2F;
+        }
+        .lightgreen {
+            border-left-color: #ADFF2F;
+        }
+
+        .brown hr{
+            background: #8B4513;
+        }
+        .brown {
+            border-left-color: #8B4513;
+        }
+
+        .pink hr{
+            background: #FF66FF;
+        }
+        .pink {
+            border-left-color: #FF66FF;
+        }
+
+        .orange hr{
+            background: #c97a57;
+        }
+        .orange {
+            border-left-color: #c97a57;
+        }
+
+        .grey hr{
+            background: #737373;
+        }
+        .grey {
+            border-left-color: #737373;
+        }
+
+        .greenb hr{
+            background: #00a3aa;
+        }
+
+        .greenb {
+            border-left-color: #00a3aa;
+        }
+
+    .topbox{
+          padding: 15px;
+          padding-bottom: 15px;
+          background-color: #2C2F33;
+          border-radius: 10px;
+        }
+    .topboxagustinprs{
+              margin: 4px;
+              padding: 4px;
+              background-color: orange;
+              border-radius: 10px;
+              width: 15%;
+              display: inline;
+              padding-bottom: -10px;
+            }
+    .topboxdanger{
+              margin: 4px;
+              padding: 4px;
+              background-color: #d9534f;
+              border-radius: 10px;
+              width: 15%;
+              display: inline;
+              padding-bottom: -10px;
+                }
+    .topboxinfo{
+              margin: 4px;
+              padding: 4px;
+              background-color: #5bc0de;
+              border-radius: 10px;
+              width: 15%;
+              display: inline;
+              padding-bottom: -10px;
+        }
+  .topboxwarning{
+              margin: 4px;
+              padding: 4px;
+              background-color: #f0ad4e;
+              border-radius: 10px;
+              width: 15%;
+              display: inline;
+              padding-bottom: -10px;
+        }
+  .topboxsuccess{
+              margin: 4px;
+              padding: 4px;
+              background-color: #2b542c;
+              border-radius: 10px;
+              width: 15%;
+              display: inline;
+              padding-bottom: -10px;
+        }
+  .topboxsort{
+              margin: 4px;
+              padding: 4px;
+              background-color: #000;
+              border-radius: 10px;
+              width: 15%;
+              display: inline;
+              padding-bottom: -10px;
+        }
+  .topboxgult{
+              margin: 4px;
+              padding: 4px;
+              background-color: #FFD700;
+              border-radius: 10px;
+              width: 15%;
+              display: inline;
+              padding-bottom: -10px;
+        }
+  .topboxlightgreen{
+              margin: 4px;
+              padding: 4px;
+              background-color: #ADFF2F;
+              border-radius: 10px;
+              width: 15%;
+              display: inline;
+              padding-bottom: -10px;
+        }
+  .topboxbrown{
+              margin: 4px;
+              padding: 4px;
+              background-color: #8B4513;
+              border-radius: 10px;
+              width: 15%;
+              display: inline;
+              padding-bottom: -10px;
+        }
+  .topboxpink{
+              margin: 4px;
+              padding: 4px;
+              background-color: #FF66FF;
+              border-radius: 10px;
+              width: 15%;
+              display: inline;
+              padding-bottom: -10px;
+        }
+  .topboxorange{
+              margin: 4px;
+              padding: 4px;
+              background-color: #c97a57;
+              border-radius: 10px;
+              width: 15%;
+              display: inline;
+              padding-bottom: -10px;
+        }
+  .topboxgrey{
+              margin: 4px;
+              padding: 4px;
+              background-color: #737373;
+              border-radius: 10px;
+              width: 15%;
+              display: inline;
+              padding-bottom: -10px;
+        }
+  .topboxgreenb{
+              margin: 4px;
+              padding: 4px;
+              background-color: #00a3aa;
+              border-radius: 10px;
+              width: 15%;
+              display: inline;
+              padding-bottom: -10px;
+        }
+
+    .topbox p{
+      padding-top: 10px;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+    .topbox a:link, .topbox a:visited, .topbox a:hover, .topbox a:active{
+      font-size: 13px;
+      font-family: "Segoe UI";
+      color: white !important;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+      #myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #2C2F33; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 15px; /* Increase font size */
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Segoe UI';
+  }
+
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+
+    </style>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="es-ES">
+
+<!--[REQUIERE EL IDIOMA EN ENGLISH]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+   <!--- INICIO
+   ================================================== -->
+    <meta charset="utf-8">
+	<title>Descargas - Gangsters Roleplay</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <meta name="robots" content="noindex,nofollow" />
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+ <!-- SISTEMA NAVEGADOR MOVIL
+================================================== -->
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- CSS
+   ================================================== -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="csrf-token" content="wXynlILkf54IMGBJKEatn77WfthBJTVpO92zrKCS">
+
+ 	<!-- CSS
+   ================================================== -->
+   <link rel="stylesheet" href="css/base.css">  
+   <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/vendor.css">
+   <link rel="stylesheet" href="css/estilo.css">         
+  
+
+<!-- script
+   ================================================== -->
+<script src="js/modernizr.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-119390166-1"></script>
+<script>
+  	window.dataLayer = window.dataLayer || [];
+  	function gtag(){dataLayer.push(arguments);}
+  	gtag('js', new Date());
+  	gtag('config', 'UA-119390166-1');
+  	</script>
+</head>
+<body id="top">
+
+        <!-- header 
+       ================================================== -->
+       <header>
+    
+           <div class="row">
+    
+               <div class="logo">
+              <img src="images/logo.png"  border="0" width="210" height="50"></a>
+              </div>
+    
+               <nav id="main-nav-wrap">
+                    <ul class="main-navigation">     
+                        <li class="highlight with-sep"><a href="https://discord.gg/pKGyD7vbnz" title="Acceder al Discord">DISCORD</a></li>
+                        <li class="highlight with-sep"><a href="/foro" title="Ir al foro SA:MP">FORO (SA:MP)</a></li>
+                        <li class="highlight with-sep"><a href="/fiveforo" title="Ir al foro SA:MP">FORO (GTA V)</a></li>
+                        <li class="highlight with-sep"><a href="normativas.html" title="Ver Normas GS:RP">NORMAS</a></li>
+                        <li class="highlight with-sep"><a href="plataformas.html" title="Infraestructura GS:RP">PLATAFORMAS</a></li>
+                        <li class="highlight with-sep"><a href="tienda.html" title="Tienda">TIENDA</a></li>
+                        <li class="highlight with-sep"><a href="index.html" title="Volver al inicio">INICIO</a></li>
+                    
+                    </ul>
+                </nav>
+    
+                <a class="menu-toggle" href="#"><span>Menu</span></a>
+               
+           </div>   	
+            <!-- PARTE BAJA -->
+       </header>
+  
+           <!-- Para versión móvil y navegadores
+           ========================================================= -->
+    
+          <div id="video-popup" class="popup-modal mfp-hide">
+    
+               <div class="fluid-video-wrapper">
+                <iframe src="#" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+             </div>		     
+    
+             <a class="close-popup">Cerrar</a>         
+    
+           </div>  	 	
+    
+       </section> 
+    
+       <section id="testimonials">
+
+        <div class="row">
+            <div class="col-twelve">
+                <h2 class="h01">Apartado de descargas</h2>
+          </div></div>
+
+          <div id="testimonial-slider" class="flexslider">
+
+            <ul class="slides">
+        
+               <li>
+                   <div class="testimonial-author">
+                        <img src="images/img/logo.png" alt="descarga">
+                        <div class="author-info">
+                             Descarga los clientes SA:MP y Five M ¡y a jugar!
+                            <span class="position">Descarga las extensiones para tus juegos GTA V y GTA San Andreas para poder jugar en nuestros servidores de Roleplay.</span>
+                        </div>
+                  </div>
+        
+                  <p>
+                  ¡Decarga ya! y empieza a desarrollar un personaje en San Andreas Multiplayer o GTA V Five Multiplayer.
+                  </p>                  
+                 </li> <!-- /slide -->
+        
+               <li> 
+        
+                   <div class="testimonial-author">
+                        <img src="images/icons2/icons8-microsoft-admin-100.png" alt="seguridad">
+                        <div class="author-info">
+                               Libres de malware
+                            <span>Nuestros cortafuegos se encuentran funcionando.</span>
+                        </div>
+                  </div> 
+        
+                  <p>
+                 Gracias a una infraesctructura propia podemos garantizar que todos los archivos que publicamos para su descarga se encuentran libres de ningun virus.
+                  </p>
+                                         
+               </li>
+        
+            </ul> 
+        
+         </div>        
+         
+         
+        </div>
+    </section>
+        
+
+    </div>
+  </div>
+
+  </div>
+
+
+
+
+</div>
+</div>
+
+
+
+      <!-- script proceso instalación samp-->
+      <div class="container">
+        <div class="process">
+            <div class="process-row">
+                <div class="process-step">
+                    <button type="button" class="btn btn-default btn-circle" disabled="disabled"><img src="images/icons2/icons8-payment-64.png" width="60" height="60">
+                      </button>
+                      <p><h4>Compra GTA San Andreas</h4></p>               
+                </div>
+                <div class="process-step">
+                    <button type="button" class="btn btn-default btn-circle" disabled="disabled"><img src="images/icons/download.png" width="60" height="60"></button>
+                    <p><h4>Instala la GTA:SA en tu ordenador</h4></p>
+                </div>
+                <div class="process-step">
+                    <button type="button" class="btn btn-default btn-circle" disabled="disabled"><img src="images/otro.png" width="60" height="60"></button>
+                    <p><h4>Descarga e instala SA:MP 0.3.7</h4></p>
+                </div> 
+                 <div class="process-step">
+                    <button type="button" class="btn btn-success btn-circle" disabled="disabled"><img src="images/img/logo.png" width="80" height="80"></button>
+                    <p><h4>¡Accede a GS:RP!</h4></p>
+                </div> 
+            </div>
+            </div>
+
+     </br>
+
+     
+  <div class="container">
+    <div class="row">
+        <div class="span3">
+            <div class="well">
+<div class="error-notice">
+<div class="oaerror agustinprs" id="sampR2">
+<img src="images/iconosweb/samp-png-3.png"  width="100" height="87">
+<h5><a href="https://files.sa-mp.com/sa-mp-0.3.7-R4-2-install.exe" class="btn btn-sm btn-primary"><span class="glyphicon glyphicon-tasks"></span><img src="images/otro.png" width="13" height="13"> DESCARGAR SA:MP Client R2 </a> </h5>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+   <section class="section another-section" id=jugar style=text-align:left>
+
+      <div class=container>
+         <div class=phones>
+            <img alt="descargas" src=images/img/webfrontal6.png class="fadeInUp wow img-responsive right-mob-front" data-wow-delay=0s data-wow-duration=1s data-wow-offset=50>
+            </div>
+      <div class="row relative">
+      <div class=col-md-6>
+      <h5>Descarga Cliente SA-MP 0.3.7.-R4
+      </h5>
+      
+
+      <p class=space40>
+      <ol class=special type=1>
+         
+      <li><img src="images/icons2/icons8-game-controller-48.png"  width="13" height="13"> Inicia el programa y agrega la IP a favoritos: 
+      <b><p><span class="label label-info">135.125.17.25:7777</span></p>
+      </b>
+      <li><img src="images/icons2/icons8-male-user-48.png"  width="13" height="13"> Ingresa tu nombre de usuario en el launcher de SA:MP.
+      <li><img src="images/icons2/icons8-registration-48.png"  width="13" height="13"> ¡Recuerda que el formato debe ser Nombre_Apellido!
+      <li><img src="images/icons/emoji.png"  width="13" height="13"> ¡Diviertete jugando en está nueva experiencia de rol única! 
+      </ol>
+      </div>
+      </div>
+      </div>
+      </section>
+
+
+
+      <!--Sección de la descargas-->
+      <!-- script proceso instalación GTA V-->
+      <div class="container">
+        <div class="process">
+            <div class="process-row">
+                <div class="process-step">
+                    <button type="button" class="btn btn-default btn-circle" disabled="disabled"><img src="images/icons2/icons8-payment-64.png" width="60" height="60">
+                      </button>
+                      <p><h4>Compra GTA V</h4></p>               
+                </div>
+                <div class="process-step">
+                    <button type="button" class="btn btn-default btn-circle" disabled="disabled"><img src="images/iconosweb/gtav.png" width="60" height="60"></button>
+                    <p><h4>Instala GTA V</h4></p>
+                </div>
+                <div class="process-step">
+                    <button type="button" class="btn btn-default btn-circle" disabled="disabled"><img src="images/iconosweb/fivemicon.png" width="60" height="60"></button>
+                    <p><h4>Descarga e instala Five M</h4></p>
+                </div> 
+                 <div class="process-step">
+                    <button type="button" class="btn btn-success btn-circle" disabled="disabled"><img src="images/img/logo.png" width="80" height="80"></button>
+                    <p><h4>¡Accede a GS:RP!</h4></p>
+                </div> 
+            </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="span3">
+                        <div class="well">
+            <div class="error-notice">
+                <div class="oaerror agustinprs" id="descargagtav">
+                    <img src="images/iconosweb/fivemlogo.png"  width="190" height="120">
+                    <h5> <a href="https://five.net" class="btn btn-sm btn-primary"><span class="glyphicon glyphicon-tasks"></span><img src="images/iconosweb/fivemicon.png" width="13" height="13">(GTA V) FIVE M CLIENT</a> </h5>
+                
+                </div>
+                </div>
+            </div>
+            </div>
+            
+            </div>
+            </div>
+     </br>
+
+     <section class="section another-section" id=jugar style=text-align:left>
+
+        <div class=container>
+           <div class=phones>
+              <img alt="descargas" src=images/img/webfrontal2.png class="fadeInUp wow img-responsive right-mob-front" data-wow-delay=0s data-wow-duration=1s data-wow-offset=50>
+              </div>
+        <div class="row relative">
+        <div class=col-md-6>
+        <h5>Descarga Cliente Five M launcher (no GTA V juego)
+        </h5>
+        
+   
+      
+        <p class=space40>
+        <ol class=special type=1>
+           
+        <li><img src="images/icons2/icons8-game-controller-48.png"  width="13" height="13"> Inicia el programa y agrega la IP a favoritos: 
+        <b><p><span class="label label-info">135.125.17.25</span></p>
+        </b>
+        <li><img src="images/icons2/icons8-male-user-48.png"  width="13" height="13"> Ingresa tu nombre de usuario en el launcher de Five M en GTA V.
+        <li><img src="images/icons2/icons8-registration-48.png"  width="13" height="13"> ¡Recuerda que el formato debe ser Nombre_Apellido!
+        <li><img src="images/icons/emoji.png"  width="13" height="13"> En esta nueva plataforma, podrás disfrutar del roleplay en estado puro, ¡sin límites!
+        </ol>
+        </div>
+        </div>
+        </div>
+        </section>
+
+
+<button onclick="topFunction()" id="myBtn" title="Go to top">Subir</button>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/lwd.js"></script>
+<script>
+    $(document).on('click', '.panel-heading span.clickable', function(e){
+        var $this = $(this);
+        if(!$this.hasClass('panel-collapsed')) {
+            $this.parents('.panel').find('.panel-body').slideUp();
+            $this.addClass('panel-collapsed');
+            $this.find('i').removeClass('glyphicon-chevron-up').addClass('glyphicon-chevron-down');
+        } else {
+            $this.parents('.panel').find('.panel-body').slideDown();
+            $this.removeClass('panel-collapsed');
+            $this.find('i').removeClass('glyphicon-chevron-down').addClass('glyphicon-chevron-up');
+        }
+    })
+
+
+    $("#success-alert").fadeTo(4000, 1000).slideUp(1000, function(){
+        $("#success-alert").slideUp(1000);
+    });
+</script>
+
+</div>             
+                                      
+</li>
+
+</ul> 
+
+</div>         
+
+</div> 
+
+</div>
+
+</body>
+
+</section>  
+
+
+<!--final pag gsrp-->
+<footer class="footer">
+    <div class="container bottom_border">
+    <div class="row">
+    <div class=" col-sm-4 col-md col-sm-4  col-12 col">
+    <!--copy1  + navega-->
+    <p class="mb10">Gangsters - Juego de Rol, comunidad propietaria de FoCo Gaming RPG | ESPAÑA 2022.</p>
+    <p class="mb10">Nuestros servicios no se encuentran afiliados a Two Takers Inc, Rockstar Games o Grand Theft Auto.</p>
+    
+    
+    </div>
+    </div>
+    </div>
+    
+    
+    <div class="container">
+    <ul class="foote_bottom_ul_amrc">
+    <li><a href="/foro">Foro (SA:MP)</a></li>
+    <li><a href="/fiveforo">Foro (GTA V)</a></li>
+    <li><a href="normativas.html">Normas</a></li>
+    <li><a href="plataformas.html">Plataformas</a></li>
+    <li><a href="certificadosweb.html">Certificados</a></li>
+    <li><a href="politica.html">Politica</a></li>
+    <li><a href="tienda.html">Tienda</a></li>
+    </ul>
+    <!--copy2 general + rrss-->
+    <p class="text-center">Copyright @2022 Gangsters - Juego de Rol | Programado y diseñado con  <img src="images/icons/cmblockamor.png"   width="13" height="13"> <a href="#">By Courier</a></p>
+ 
+    
+    <ul class="social_footer_ul">
+    <li><a href="errorpage.html"><img src="images/icons2/icons8-youtube-48.png" alt="YouTube" style="width:42px;height:42px;"></a></li>
+    <li><a href="https://discord.gg/pKGyD7vbnz"><img src="images/icons2/icons8-discord-64.png" alt="Discord" style="width:42px;height:42px;"></a></li>
+ 
+    </ul>
+    <img src="images/site_logo.png"   width="360" height="80"></li>
+    <!--final de footer y carga de imagen-->
+    </div>
+ 
+    <div id="preloader">
+       <div id="loader"></div>
+   </div>
+   <!-- Java Script -->
+   <script src="js/jquery-1.11.3.min.js"></script>
+   <script src="js/jquery-migrate-1.2.1.min.js"></script>
+   <script src="js/plugins.js"></script>
+   <script src="js/main.js"></script>
+ 
+ 
+ </body>
+ 
+ 
+ </footer>
+ 
+  

@@ -1,0 +1,702 @@
+<script src="/cdn-cgi/apps/head/c9tEh4G7R9EE5BPPFVgc9tXx3Y4.js"></script><script>
+  window.addEventListener("hashchange", function () {
+      window.scrollTo(window.scrollX, window.scrollY - 100);
+  });
+
+      // Cuando el usuario se desplaza hacia abajo 20 px.
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+      } else {
+        document.getElementById("myBtn").style.display = "none";
+      }
+    }
+
+    function topFunction() {
+      document.body.scrollTop = 0; // Safari
+      document.documentElement.scrollTop = 0; // Chrome, firefox, etc.
+    }
+  </script>
+<style>
+
+        .row {
+            margin-top: 10px;
+            padding: 0 10px;
+        }
+
+
+        .oaerror p {
+            margin: 0;
+        }
+
+        .error-notice {
+            margin: 5px 5px; /* Making sure to keep some distance from all side */
+        }
+
+        .oaerror {
+            width: 100%; /* Configure it fit in your design  */
+            margin: 0 auto; /* Centering Stuff */
+            background-color: #FFFFFF; /* Default background */
+            padding: 20px;
+            border: 1px solid #eee;
+            border-left-width: 5px;
+            border-radius: 3px;
+            margin: 0 auto;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 14px;
+        }
+
+        .oaerror h5{
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .danger hr {
+            background: #d9534f;
+        }
+
+        .danger {
+            border-left-color: #d9534f; /* Left side border color */
+        }
+
+
+        .warning hr {
+            background:#f0ad4e;
+        }
+        .warning {
+            border-left-color: #f0ad4e;
+        }
+
+        .info hr{
+            background: #5bc0de;
+        }
+        .info {
+            border-left-color: #5bc0de;
+        }
+
+        .success hr{
+            background: #2b542c;
+        }
+        .success {
+            border-left-color: #2b542c;
+        }
+
+		.agustinprs hr{
+            background: #FF9900;
+        }
+        .agustinprs {
+            border-left-color: #FF9900;
+        }
+
+        .sort hr{
+            background: #000000;
+        }
+        .sort {
+            border-left-color: #000000;
+        }
+
+        .gult hr{
+            background: #FFD700;
+        }
+        .gult {
+            border-left-color: #FFD700;
+        }
+
+        .lightgreen hr{
+            background: #ADFF2F;
+        }
+        .lightgreen {
+            border-left-color: #ADFF2F;
+        }
+
+        .brown hr{
+            background: #8B4513;
+        }
+        .brown {
+            border-left-color: #8B4513;
+        }
+
+        .pink hr{
+            background: #FF66FF;
+        }
+        .pink {
+            border-left-color: #FF66FF;
+        }
+
+        .orange hr{
+            background: #c97a57;
+        }
+        .orange {
+            border-left-color: #c97a57;
+        }
+
+        .grey hr{
+            background: #737373;
+        }
+        .grey {
+            border-left-color: #737373;
+        }
+
+        .greenb hr{
+            background: #00a3aa;
+        }
+
+        .greenb {
+            border-left-color: #00a3aa;
+        }
+
+    .topbox{
+          padding: 15px;
+          padding-bottom: 15px;
+          background-color: #2C2F33;
+          border-radius: 10px;
+        }
+    .topboxagustinprs{
+              margin: 4px;
+              padding: 4px;
+              background-color: orange;
+              border-radius: 10px;
+              width: 15%;
+              display: inline;
+              padding-bottom: -10px;
+            }
+    .topboxdanger{
+              margin: 4px;
+              padding: 4px;
+              background-color: #d9534f;
+              border-radius: 10px;
+              width: 15%;
+              display: inline;
+              padding-bottom: -10px;
+                }
+    .topboxinfo{
+              margin: 4px;
+              padding: 4px;
+              background-color: #5bc0de;
+              border-radius: 10px;
+              width: 15%;
+              display: inline;
+              padding-bottom: -10px;
+        }
+  .topboxwarning{
+              margin: 4px;
+              padding: 4px;
+              background-color: #f0ad4e;
+              border-radius: 10px;
+              width: 15%;
+              display: inline;
+              padding-bottom: -10px;
+        }
+  .topboxsuccess{
+              margin: 4px;
+              padding: 4px;
+              background-color: #2b542c;
+              border-radius: 10px;
+              width: 15%;
+              display: inline;
+              padding-bottom: -10px;
+        }
+  .topboxsort{
+              margin: 4px;
+              padding: 4px;
+              background-color: #000;
+              border-radius: 10px;
+              width: 15%;
+              display: inline;
+              padding-bottom: -10px;
+        }
+  .topboxgult{
+              margin: 4px;
+              padding: 4px;
+              background-color: #FFD700;
+              border-radius: 10px;
+              width: 15%;
+              display: inline;
+              padding-bottom: -10px;
+        }
+  .topboxlightgreen{
+              margin: 4px;
+              padding: 4px;
+              background-color: #ADFF2F;
+              border-radius: 10px;
+              width: 15%;
+              display: inline;
+              padding-bottom: -10px;
+        }
+  .topboxbrown{
+              margin: 4px;
+              padding: 4px;
+              background-color: #8B4513;
+              border-radius: 10px;
+              width: 15%;
+              display: inline;
+              padding-bottom: -10px;
+        }
+  .topboxpink{
+              margin: 4px;
+              padding: 4px;
+              background-color: #FF66FF;
+              border-radius: 10px;
+              width: 15%;
+              display: inline;
+              padding-bottom: -10px;
+        }
+  .topboxorange{
+              margin: 4px;
+              padding: 4px;
+              background-color: #c97a57;
+              border-radius: 10px;
+              width: 15%;
+              display: inline;
+              padding-bottom: -10px;
+        }
+  .topboxgrey{
+              margin: 4px;
+              padding: 4px;
+              background-color: #737373;
+              border-radius: 10px;
+              width: 15%;
+              display: inline;
+              padding-bottom: -10px;
+        }
+  .topboxgreenb{
+              margin: 4px;
+              padding: 4px;
+              background-color: #00a3aa;
+              border-radius: 10px;
+              width: 15%;
+              display: inline;
+              padding-bottom: -10px;
+        }
+
+    .topbox p{
+      padding-top: 10px;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+    .topbox a:link, .topbox a:visited, .topbox a:hover, .topbox a:active{
+      font-size: 13px;
+      font-family: "Segoe UI";
+      color: white !important;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+      #myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #2C2F33; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 15px; /* Increase font size */
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Segoe UI';
+  }
+
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+
+    </style>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="es-ES">
+
+<!--[REQUIERE EL IDIOMA EN ENGLISH]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+   <!--- INICIO
+   ================================================== -->
+    <meta charset="utf-8">
+	<title>Gamemode - Gangsters Roleplay</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <meta name="robots" content="noindex,nofollow" />
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+ <!-- SISTEMA NAVEGADOR MOVIL
+================================================== -->
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- CSS
+   ================================================== -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="csrf-token" content="wXynlILkf54IMGBJKEatn77WfthBJTVpO92zrKCS">
+
+ 	<!-- CSS
+   ================================================== -->
+   <link rel="stylesheet" href="css/base.css">  
+   <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/vendor.css">
+   <link rel="stylesheet" href="css/estilo.css">         
+  
+
+<!-- script
+   ================================================== -->
+<script src="js/modernizr.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-119390166-1"></script>
+<script>
+  	window.dataLayer = window.dataLayer || [];
+  	function gtag(){dataLayer.push(arguments);}
+  	gtag('js', new Date());
+  	gtag('config', 'UA-119390166-1');
+  	</script>
+</head>
+<body id="top">
+
+        <!-- header 
+       ================================================== -->
+       <header>
+    
+           <div class="row">
+    
+               <div class="logo">
+              <img src="images/logo.png"  border="0" width="270" height="68"></a>
+              </div>
+    
+               <nav id="main-nav-wrap">
+                    <ul class="main-navigation">     
+					<li class="current"><a class="smoothscroll"  href="#" title="">SISTEMAS</a></li>
+                    <li class="highlight with-sep"><a href="index.html" title="">Inicio</a></li>
+                    <li class="highlight with-sep"><a href="https://discord.gg/pKGyD7vbnz" title="">DISCORD</a></li>
+                    <li class="highlight with-sep"><a href="descargas.html" title="">DESCARGAS</a></li>
+                    <li class="highlight with-sep"><a href="normativas.html" title="">NORMAS</a></li>
+                    <li class="highlight with-sep"><a href="/foro" title="">FORO</a></li>
+                    <li class="highlight with-sep"><a href="plataformas.html" title="">PLATAFORMAS</a></li>
+                    <li class="highlight with-sep"><a href="paquetespremium.html" title="">TIENDA</a></li>
+                    
+                    </ul>
+                </nav>
+    
+                <a class="menu-toggle" href="#"><span>Menu</span></a>
+               
+           </div>   	
+            <!-- PARTE BAJA -->
+       </header>
+  
+           <!-- Para versión móvil y navegadores
+           ========================================================= -->
+    
+          <div id="video-popup" class="popup-modal mfp-hide">
+    
+               <div class="fluid-video-wrapper">
+                <iframe src="#" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+             </div>		     
+    
+             <a class="close-popup">Cerrar</a>         
+    
+           </div>  	 	
+    
+       </section> 
+
+       <section class="section another-section" id=jugar style=text-align:left>
+        <div class=container>
+            <div class=phones>
+                <img alt="frontal" src=images/img/webfrontal4.png class="fadeInUp wow img-responsive right-mob-front" data-wow-delay=0s data-wow-duration=1s data-wow-offset=50>
+                </div>
+        <div class="row relative">
+        <div class=phones>
+        <img alt="Tutorial" src=images/img/webfrontal1.png class="fadeInUp wow img-responsive right-mob-front" data-wow-delay=0s data-wow-duration=1s data-wow-offset=50>
+        </div>
+        <div class=col-md-6>
+        <h5>Documentación del Gamemode de Gangsters Roleplay</h5>
+        <p><img src="images/icons/document.png"  width="13" height="13"> versión actual: gs:rp gamemode v.2.0.X (versión anterior v.1.1.6)
+        <p class=space40>
+        <ol class=special type=1>
+        <p><img src="images/icons/star.png"  width="13" height="13"> Head System Developer sa-mp servers
+        <b>CMBlock.
+        </b>
+        <p><img src="images/icons/emoji.png"  width="13" height="13"> ¡Los grandes avances los hacemos nosotros!
+        <p><img src="images/icons2/icons8-info-64.png"  width="13" height="13"> Añadiremos todas las actualizaciones referentes
+        </ol>
+        </div>
+        </div>
+        </div>
+        </section>
+    
+    
+<div class="container pagepadding">
+<div class="row">
+<div class="col-md-12">
+<div class="topbox" align="center"> 
+<a href="#pendientes" /><div class="topboxagustinprs">PENDIENTES DE AÑADIR AL GAMEMODE</div></a>
+<a href="#actualizado" /><div class="topboxsuccess">gamemode gs:rp v.1.2 actualizado</div></a>
+<a href="#futuros" /><div class="topboxinfo">futuras actualizaciones</div></a>
+
+</div>
+  </div>
+
+  </div>
+<div class="error-notice">
+<div class="oaerror agustinprs" id="actualizado">
+    <h5>ACTUALIZADO (GAMEMODE SA-MP SERVER GS:RP.ES V.1.2)</h5>
+<hr>
+
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">    1.Integrado completamente sistema de catálogos de vehículos / barcos / helicopteros por el mapa de Los Santos. (integrado en v1.alpha)
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11"> 2. Integrado completamente el sistema de usuarios. (integrado en v1.alpha)
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11"> 3. Integrado complemtamente el sistema de vehículos y otros. (integrado en v1.alpha)
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11"> 4. Integrados sistemas de policía, sheriffs y departamento de prisiones. (integrado en v1.alpha)
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11"> 5. Integrado sistema de fabricar armas y cargadores. (integrado en v1.alpha)
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11"> 6. Integrado sistemas de objetos dinámicos como muebles y accesorios para jugadores. (integrado en v1.alpha)
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11"> 7. Integrado sistemas de negocios dinámicos no se permite amueblarse. (integrado en v1.alpha)
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11"> 8. Integrado sistemas de casas dinámicas permiten amueblarse. (integrado en v1.alpha)
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">9. Integrado sistemas de empresas dinámicas permiten amueblarse. (integrado en v1.alpha)
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">10. Integrado sistema de facción de Emergencias LS-ED. (integrado en v1.alpha)
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">11. Integrado sistema de bolsillos para el jugador. (integrado en v1.alpha)
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">12. Integrado sistema de recargar armas y permitir guardar cargador como un objeto. (integrado en v1.alpha)
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">13. Integrado sistema de casino, permitir al usuario poder jugar con dinero a juegos dinámicos de azar. (integrado en v1.alpha)
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">14. Integrado sistema de hambre - sed durante un largo período de conexión. (integrado en v1.alpha)
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">15. Integrado sistema de heridas. (integrado en v1.alpha)
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">16. Integrado sistema dinámico de guardar coches al desconectarse. (integrado en v1.alpha)
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">17. Sistema de trabajos de traficante / fabricar muebles / Carguero (mozo). (integrado en v1.alpha)
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">18. Integrado sistema de cajas donde se pueden guardar objetos. (integrado en v1.alpha)
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">19. Integrado sistema de maletines donde se puede guardar dinero. (integrado en v1.alpha)
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">20. Integrado mercado negro, donde poder comprar materiales para la fabricación de armas, DNI falsos etc. (integrado en v1.alpha)
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">21. Sistema de la facción LS-PD al completo. (integrado en v1.alpha)
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">22. Permitir creación de facciones ilegales (mafias u otras) con comando administrativo. (integrado en v1.alpha)
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">23. Permitir añadir muebles dentro de interior de empresas o casas. (integrado en v1.alpha).
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">24. Poder colocar objetos a la espalda. (integrado en v1.alpha).
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">25. Sirenas para vehículos que por default no sean de la policía con el comando /sirena. (integrado en v1.alpha).
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">26. Sistema de economía realista, con sistema de banco, poder realizar cheques. (integrado en v1.alpha).
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">27. Sistema de administración jerarquico con todo tipo de opciones para una administracion correcta. (integrado en v1.alpha).
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">28. Sistema de Prisión Federal en el mapa de Las Venturas. (integrado en v1.alpha)
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">29. Sistema de posibilidad de empresas de mecánica, gasolineras, etc, administrando empleados u otros activos.
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">30. Permitir añadir alarmas a las casas, negocios, vehículos y empresas.(integrado en v1.alpha)
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">31. Objetos variados en el servidor que se te aparecera en la mano, pudiendo manipularlo. (integrado en v1.alpha)
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">32. Sistema de teléfono, pudiendo elegir el modelo y color que quieras y puedo tener máximo dos teléfonos.
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">33. En el teléfono sistema de teléfono por mercado negro. (integrado en v1.alpha)
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">34. Sistema de cóctels molotovs (integrado en v1.alpha).
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">35. Sistema de atracos al banco (solo se activa con comando admin). (integrado en v1.alpha)
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">36. Trabajos dinámicos repartidos por todo el mapa. (integrado en v1.alpha).
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">37. Sistema de guanteras / maleteros dentro de todos los vehículos. (integrado en v1.alpha)
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">38. Cambios en los modelos default de las armas de GTA:SA. (integrado en v1.alpha).
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">39. Sistema de peajes. (integrado en v1.alpha)
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">40. Sistema puentear vehículos con ganzúas. (integrado en v1.alpha)
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">41. Sistema de ordenador policial. (integrado en v1.alpha)
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">42. Sistemas anti-cheat - anti-afk. (integrado en v1.alpha)
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">43. Sistemas de NPCs en sitios públicos como casinos, ayuntamiento. (integrado en v1.alpha)
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">44. Paquetes de drogas permitir usar /paquete [sacar - guardar] para guardar objetos.
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">45. Sistema de traficar con drogas para facciones ilegales con sistema creado dentro del juego, igual que fabricar armas.
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">46. Creados objetos dinámicos de paquetes de drogas.
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">47. Implementado efectos de drogas al utilizar /consumir, quita gramos de droga de cada paquete al consumir.
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">48. Implementado sistema dentro del pedido de drogas más dinámico que pueda hacer /pedido [drogas - coches - camion]
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">49. Mejorado detalles del sistema de coches, ahora va enlazado en /pedido con el uso del comando para miembros de familias.
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">50. Sistema de garages pequeños, medianos y grandes para las casas.
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">51. Sistema de amueblar tu casa con objetos dinámicos.
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">52. Algunos errores reparados.
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">53. Modificaciones en el sistema /callsign modificar matricula de TextDraw de vehículos de la LS-PD / SA-SD / SADOC / LS-ED.
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">54. Mejorado sistema de inventario en el armamento de la LS-PD.
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">55. Mejorado sistema de esposas, la manera en la que la LS-PD esposa a un usuario.
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">56. Añadidos objetos al catálogo de muebles en talleres mecánicos (si son empresas).
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">57. Modificaciones en sistema premium.
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">58. Añadidos en sistema premium (4) ranura extra en /ropa.
+<li>(1) ranura extra en /trabajos.
+<li>(3) ranura extra en vehículos.
+<li>(3) ranura extra en maleteros.
+<li>(1) ranura extra para /comprarcasa
+<li>(1) ranura extra para /comprarnegocio.
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">59. Añadidos varios objetos toys (sombreros etc) para premiums en accesorios (/accesorios).
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">60. Modificado el comando /rcaja robar caja registradora, no podrás sacar o guardar el dinero de una caja registradora si no la tienes en la mano.
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">61. Modificado comando administrador para editar el tipo de familia 1- mafia 2- pandilla.
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">62. Optimización de algunos comandos.
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">63. Optimización de la carga de objetos, en entornos con muchos muebles.
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">64. Modificada variable de crear los incendios.
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">65. El sistema crea incendios reales aleatorios por la ciudad para que la LS-ED los atienda.
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">66. Se puede guardar dinero en una caja vacía.
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">67. Reparado error en la armería de la comisaría de la LS-PD utilizando /equipo.
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">68. Reparadas funciones y errores de algunos comandos.
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">69. Modificadas horas de armas en niveles 1 (mínimo 10 horas).
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">70. Optimización de la carga del modo de juego.
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">71. Modificación de horas para armas, demomento lo dejamos en 2 horas.
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">72. Añadido sistema de ping a partir de 700 de ping, te expulsa el servidor.
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">73. Añadido para administradores comando para poder arrancar vehículos.
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">74. Modificación del sistema de seguridad, respecto a configuraciones de macros de largas secuencias para que no te banee el servidor (especial ojo con esto).
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">75. Modificación del sistema de casas, reparado un pequeño bug en la configuración de las ranuras del armario.
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">76. Reparado error al subirte al vehículo como pasajero usas las teclas 'enter' y 'f' y te mete de conductor, no podías subirte de pasajero.
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">77. Modificación al subirte al vehículo, ahora se puede usar como pasajero utilizando la letra 'g'.
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">78. Modificación al comando '/sistemajudicial' por '/ordenadorpd' (añadido para actualización del 10 - 01 - 2022)
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">79. Reparado error en la armería de la LS-PD no daba esposas, ahora sí jeje.
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">80. Añadidos por el error en la armería de la LS-PD, modificaciones de rango para tomar objetos.
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">81. Añadido rango 12 en la LS-PD (Commander).
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">82. Optimización en el modo de juego.
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">83. Añadido sistemas de regalos aleatorios de dinero y experiencia/habilidades cada 12 horas a jugadores aleatorios, (hasta el día 15-01-2022) (luego se quita).
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">84. Añadido el comando /desbug (si te bugeas en un interior puedes hacer uso de esto).
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">85. Modificaciones en el sistema de vehículos.
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">86. Añadido sistema de maleteros en LS-PD/SA-SD/LS-ED: Los vehículos asignados a facciones no tenian maleteros (faltaba por meter), ahora los maleteros son '/maleteropd' o '/maleterolsed'.
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">87. Correcciones del sistema firewall y anti-cheats (permitido uso de macros en secuencias largas) [OJO CON ESTO os puede banear]
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">88. Modificaciones en los precios de las armas del Ammu-nation, así se obliga a traficar con armas con los jobs correspondientes.
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">89. Modificaciones del Bot de seguridad.
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">90. Quitar el sistema de ventanas dentro de vehículos [V-C] - [V-A]. Se mejorará en un futuro añadiendo /ventanilla.
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">91. Optimización del modo de juego.
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">92. Optimización del modo de juego para dispositivos Android.
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">93. Adaptación de sistemas de usuario necesarios para dispostivos Android.
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">94. Añadidos y modificaciones en comandos admin (no existia el arrancarveh como admin xdd)
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">95. Corrección de otras variables, métodos, _mensajes etc
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">89. Modificaciones del Bot de seguridad.
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">90. Quitar el sistema de ventanas dentro de vehículos [V-C] - [V-A]. Se mejorará en un futuro añadiendo /ventanilla.
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">91. Optimización del modo de juego.
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">92. Optimización del modo de juego para dispositivos Android.
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">93. Adaptación de sistemas de usuario necesarios para dispostivos Android.
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">94. Añadidos y modificaciones en comandos admin (no existia el arrancarveh como admin)
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">95. Corrección de otras variables, métodos, _mensajes etc.
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">96. Modificado chat de /mps, mejorado eso de que los admins lo puedan leer (en /adminservicio claro).
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">97. Modificadas características de otros comandos de chat.
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">98. Añadidas acción de rol a algunos comandos, ej: /caja sacar.
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">99. Mejora de errores reportados por los usuarios en fase de test.
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">100. Actualizado modo de juego a la versión v.1.1.6.
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">101. Modificaciones de errores y optimización del juego.
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">102. Modificaciones en el velocímetro actual, añadido uno más moderno y optimizado (muestra info coche + GPS)
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">103. Añadido teléfono dinámico iPhone (/iphone), pudiendose manejar con las letras del Num Pad 4 - 6 y la opción de entrar es Y.
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">104. Modificaciones en el sistema de armas actual.
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">105. Mejoras en la economía y algunos pagos en los trabajos del servidor.
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">106. Añadidas mejoras de seguridad anti-Bot (en caso de bucle por mismas IPs el sistema las expulsa automáticamente)
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">107. Mejorado el comando /desbug que amplia más variables y las deja default para los usuarios bugs en casas, negocios o interiores.
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">108. Añadido que en el teléfono normal, se puedan hacer transferencias de dinero sin necesidad de ir al banco (se descuenta el saldo de la cuenta bancaria).
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">109. Actualizado modo de juego a la v.1.2.
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">110. Añadido utilizar tecla CTRL Back para entrar o salir de negocios.
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">111. Añadido en el sistema de /muebles poder amueblar los negocios del servidor :) antes solo se podían garages, casas y empresas, ahora negocios.
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">112. Modificaciones en el menú de /ayuda.
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">113. Otras modificaciones pequeñas en sistemas de trabajos (algunos checkpoint no funcionaban).
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">114. Corregidos algunos problemas al crear casas con comando administrativo, algunos interiores no los asignaba y caias al vacío al entrar.
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">115. Añadidos objetos como bolsas de deportes y maletines, en los que se puede guardar cosas en su interior (2 slots).
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">116. Bajadas habilidades en el casino para poder optar más rápido a un juego (si se abusa mucho se limitará de nuevo).
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">117. Un administrador puede habilitar el sistema de incendios dinámico y se irán creando incendios para que los atienda LS-ED.
+<b>Comentario: Límitado a que haya miembros activos de la facción.</b>
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">118. Modificado el sistema de /emisora, ahora al subirte al vehículo no se te habilita el sistema.
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">119. Modificado el sistema de pagos del trabajo de Leñador dado el farmeo actual del mismo, se ha regulado a unos precios "reales".
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">120. Añadidos en el sistema de /pedido actual que puedas acceder al robo de coches, comprando ganzúas en el mercado negro (job delincuente).
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">121. En el sistema de pesca ya se puede pescar en el mar con una lancha, barco, etc (añadido en próxima actualización 30/01).
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">122. Modificaciones en el sistema de /ayuda haciendolo mucho mejor más fácil para todos.
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">123. Modificado punto cuando apareces como usuario nuevo, facilitando a los usuarios la accesibilidad a los sistemas al entrar.
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">124. Optimización y eliminación de mapas que no hacen falta.
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">125. Añadido interior de garage para LS-ED (bomberos). 
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">126. Añadido el '/tallerfd' [como el '/tallerpd']
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">127. Añadido sistema de crash y modificaciones en el mismo.
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">128. Optimización la carga de objetos al salir de cualquier interior (casas, negocios...)
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">129. Corregido el error en las empresas al salir con el vehículo utilizando el comando '/salir'.
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">130. Transcripción de parte del gamemode a mySQL.
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">131. Conexión del gamemode con web externa, para control del servidor por parte del Staff (revisar etc...)
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">132. Modificaciones en el sistema de vehículos, diferenciando de ID Activa / Llave.
+<p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11">133. Correciones en los pagos de algunas acciones, y adecuadas a la economía del servidor. 
+
+
+    <p><img src="images/icons2/icons8-info-64.png"  width="14" height="11"> Y mucho más que se irá actualizando.
+</div>
+</div>
+<div class="oaerror agustinprs" id="pendientes">
+    <h5>PENDIENTE DE AÑADIR AL GAMEMODE</h5>
+<hr>
+<p>No se encuentran actualizaciones pendientes de añadir al gamemode.</p>
+</div>
+</div>
+<div class="error-notice">
+    <div class="oaerror info" id="futuros">
+     
+    <h5>FUTURAS ACTUALIZACIONES DE VERSIONES DEL GAMEMODE GS:RP.ES</h5>
+    <hr>
+    <p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11"> 1. Actualizado el día 22-01-2022 a versión 1.1.6 (ESTABILIZADA Y AVANZADA)
+    <p><img src="images/icons2/icons8-new-copy-48.png"  width="14" height="11"> 2. Actualizado el día 29-01-2022 a versión 1.2. (mejoras añadidas)
+    </div>
+    </div>
+</div>
+</div>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Subir</button>
+<script src="js/jquery.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/lwd.js"></script>
+<script>
+    $(document).on('click', '.panel-heading span.clickable', function(e){
+        var $this = $(this);
+        if(!$this.hasClass('panel-collapsed')) {
+            $this.parents('.panel').find('.panel-body').slideUp();
+            $this.addClass('panel-collapsed');
+            $this.find('i').removeClass('glyphicon-chevron-up').addClass('glyphicon-chevron-down');
+        } else {
+            $this.parents('.panel').find('.panel-body').slideDown();
+            $this.removeClass('panel-collapsed');
+            $this.find('i').removeClass('glyphicon-chevron-down').addClass('glyphicon-chevron-up');
+        }
+    })
+
+
+    $("#success-alert").fadeTo(4000, 1000).slideUp(1000, function(){
+        $("#success-alert").slideUp(1000);
+    });
+</script>
+
+
+ 
+ 
+</body>
+</body>
+</html>
+
+</div>
+</div>             
+                    
+</li>
+
+</ul> 
+
+</div>         
+
+</div> 
+
+</section>  
+
+  
+<div class="footer-bottom">
+
+   <div class="row">
+
+      <div class="col-twelve">
+         <div class="">
+            <p>© Copyright Gangsters - Juego de Rol, comunidad propietaria de FoCo Gaming RPG | Spanish 2022. Nuestros servicios no se encuentran afiliados a Two Takers Inc, Rockstar Games o Grand Theft Auto.</p>
+
+
+                  <hr><!--Botones final-->
+                  
+               <br />
+            <br />
+           <h5> Programado y diseñado con  <img src="images/icons/cmblockamor.png"   width="13" height="13">
+                                                       <h4> by CMBlock.</h4>
+                                                       <img src="images/logo.png"   width="180" height="80">
+            <br />
+            
+            <a href="certificadosweb.html" class="btn btn-primary btn-warning">CERTIFICADOS</a>
+                  <a href="politica.html" class="btn btn-primary btn-warning">POLITICA</a>
+           </div>
+         </section>
+
+       </div>
+
+    </div> <!-- /footer -->
+
+</div>
+
+</footer>
+
+<div id="preloader">
+<div id="loader"></div>
+</div>
+<audio src="link.mp3" autoplay="true" loop="true"></audio>
+<!-- Java Script
+================================================== -->
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+</body>

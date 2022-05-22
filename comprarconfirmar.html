@@ -1,0 +1,484 @@
+<script src="/cdn-cgi/apps/head/c9tEh4G7R9EE5BPPFVgc9tXx3Y4.js"></script><script>
+  window.addEventListener("hashchange", function () {
+      window.scrollTo(window.scrollX, window.scrollY - 100);
+  });
+
+      // Cuando el usuario se desplaza hacia abajo 20 px.
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+      } else {
+        document.getElementById("myBtn").style.display = "none";
+      }
+    }
+
+    function topFunction() {
+      document.body.scrollTop = 0; // Safari
+      document.documentElement.scrollTop = 0; // Chrome, firefox, etc.
+    }
+  </script>
+<style>
+
+        .row {
+            margin-top: 10px;
+            padding: 0 10px;
+        }
+
+
+        .oaerror p {
+            margin: 0;
+        }
+
+        .error-notice {
+            margin: 5px 5px; /* Making sure to keep some distance from all side */
+        }
+
+        .oaerror {
+            width: 100%; /* Configure it fit in your design  */
+            margin: 0 auto; /* Centering Stuff */
+            background-color: #FFFFFF; /* Default background */
+            padding: 20px;
+            border: 1px solid #eee;
+            border-left-width: 5px;
+            border-radius: 3px;
+            margin: 0 auto;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 14px;
+        }
+
+        .oaerror h5{
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        .danger hr {
+            background: #d9534f;
+        }
+
+        .danger {
+            border-left-color: #d9534f; /* Left side border color */
+        }
+
+
+        .warning hr {
+            background:#f0ad4e;
+        }
+        .warning {
+            border-left-color: #f0ad4e;
+        }
+
+        .info hr{
+            background: #5bc0de;
+        }
+        .info {
+            border-left-color: #5bc0de;
+        }
+
+        .success hr{
+            background: #2b542c;
+        }
+        .success {
+            border-left-color: #2b542c;
+        }
+
+		.agustinprs hr{
+            background: #FF9900;
+        }
+        .agustinprs {
+            border-left-color: #FF9900;
+        }
+
+        .sort hr{
+            background: #000000;
+        }
+        .sort {
+            border-left-color: #000000;
+        }
+
+        .gult hr{
+            background: #FFD700;
+        }
+        .gult {
+            border-left-color: #FFD700;
+        }
+
+        .lightgreen hr{
+            background: #ADFF2F;
+        }
+        .lightgreen {
+            border-left-color: #ADFF2F;
+        }
+
+        .brown hr{
+            background: #8B4513;
+        }
+        .brown {
+            border-left-color: #8B4513;
+        }
+
+        .pink hr{
+            background: #FF66FF;
+        }
+        .pink {
+            border-left-color: #FF66FF;
+        }
+
+        .orange hr{
+            background: #c97a57;
+        }
+        .orange {
+            border-left-color: #c97a57;
+        }
+
+        .grey hr{
+            background: #737373;
+        }
+        .grey {
+            border-left-color: #737373;
+        }
+
+        .greenb hr{
+            background: #00a3aa;
+        }
+
+        .greenb {
+            border-left-color: #00a3aa;
+        }
+
+    .topbox{
+          padding: 15px;
+          padding-bottom: 15px;
+          background-color: #2C2F33;
+          border-radius: 10px;
+        }
+    .topboxagustinprs{
+              margin: 4px;
+              padding: 4px;
+              background-color: orange;
+              border-radius: 10px;
+              width: 15%;
+              display: inline;
+              padding-bottom: -10px;
+            }
+    .topboxdanger{
+              margin: 4px;
+              padding: 4px;
+              background-color: #d9534f;
+              border-radius: 10px;
+              width: 15%;
+              display: inline;
+              padding-bottom: -10px;
+                }
+    .topboxinfo{
+              margin: 4px;
+              padding: 4px;
+              background-color: #5bc0de;
+              border-radius: 10px;
+              width: 15%;
+              display: inline;
+              padding-bottom: -10px;
+        }
+  .topboxwarning{
+              margin: 4px;
+              padding: 4px;
+              background-color: #f0ad4e;
+              border-radius: 10px;
+              width: 15%;
+              display: inline;
+              padding-bottom: -10px;
+        }
+  .topboxsuccess{
+              margin: 4px;
+              padding: 4px;
+              background-color: #2b542c;
+              border-radius: 10px;
+              width: 15%;
+              display: inline;
+              padding-bottom: -10px;
+        }
+  .topboxsort{
+              margin: 4px;
+              padding: 4px;
+              background-color: #000;
+              border-radius: 10px;
+              width: 15%;
+              display: inline;
+              padding-bottom: -10px;
+        }
+  .topboxgult{
+              margin: 4px;
+              padding: 4px;
+              background-color: #FFD700;
+              border-radius: 10px;
+              width: 15%;
+              display: inline;
+              padding-bottom: -10px;
+        }
+  .topboxlightgreen{
+              margin: 4px;
+              padding: 4px;
+              background-color: #ADFF2F;
+              border-radius: 10px;
+              width: 15%;
+              display: inline;
+              padding-bottom: -10px;
+        }
+  .topboxbrown{
+              margin: 4px;
+              padding: 4px;
+              background-color: #8B4513;
+              border-radius: 10px;
+              width: 15%;
+              display: inline;
+              padding-bottom: -10px;
+        }
+  .topboxpink{
+              margin: 4px;
+              padding: 4px;
+              background-color: #FF66FF;
+              border-radius: 10px;
+              width: 15%;
+              display: inline;
+              padding-bottom: -10px;
+        }
+  .topboxorange{
+              margin: 4px;
+              padding: 4px;
+              background-color: #c97a57;
+              border-radius: 10px;
+              width: 15%;
+              display: inline;
+              padding-bottom: -10px;
+        }
+  .topboxgrey{
+              margin: 4px;
+              padding: 4px;
+              background-color: #737373;
+              border-radius: 10px;
+              width: 15%;
+              display: inline;
+              padding-bottom: -10px;
+        }
+  .topboxgreenb{
+              margin: 4px;
+              padding: 4px;
+              background-color: #00a3aa;
+              border-radius: 10px;
+              width: 15%;
+              display: inline;
+              padding-bottom: -10px;
+        }
+
+    .topbox p{
+      padding-top: 10px;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+    .topbox a:link, .topbox a:visited, .topbox a:hover, .topbox a:active{
+      font-size: 13px;
+      font-family: "Segoe UI";
+      color: white !important;
+      text-transform: uppercase;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+      #myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #2C2F33; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 15px; /* Increase font size */
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Segoe UI';
+  }
+
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+
+    </style>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="es-ES">
+
+<!--[REQUIERE EL IDIOMA EN ENGLISH]><!--><html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+
+   <!--- INICIO
+   ================================================== -->
+    <meta charset="utf-8">
+	<title>Confirmación - GS:RP</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <meta name="robots" content="noindex,nofollow" />
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+ <!-- SISTEMA NAVEGADOR MOVIL
+================================================== -->
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- CSS
+   ================================================== -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="csrf-token" content="wXynlILkf54IMGBJKEatn77WfthBJTVpO92zrKCS">
+
+ 	<!-- CSS
+   ================================================== -->
+   <link rel="stylesheet" href="css/base.css">  
+   <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="css/vendor.css">
+   <link rel="stylesheet" href="css/estilo.css">         
+  
+
+<!-- script
+   ================================================== -->
+<script src="js/modernizr.js"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-119390166-1"></script>
+<script>
+  	window.dataLayer = window.dataLayer || [];
+  	function gtag(){dataLayer.push(arguments);}
+  	gtag('js', new Date());
+  	gtag('config', 'UA-119390166-1');
+  	</script>
+
+</head>
+<body id="top">
+
+        <!-- header 
+       ================================================== -->
+       <header>
+    
+           <div class="row">
+    
+               <div class="logo">
+              <img src="images/logo.png"  border="0" width="210" height="50"></a>
+              </div>
+    
+               <nav id="main-nav-wrap">
+                    <ul class="main-navigation">
+                                        <li class="highlight with-sep"><a href="index.html" title="">INICIO</a></li>
+                                        <li class="highlight with-sep"><a href="https://discord.gg/MBYDdYJf" title="">DISCORD</a></li>
+                                        <li class="highlight with-sep"><a href="descargas.html" title="">DESCARGAS</a></li>
+                                        <li class="highlight with-sep"><a href="normativas.html" title="">NORMAS</a></li>
+                                        <li class="highlight with-sep"><a href="/foro" title="">FORO (SA:MP)</a></li>
+                                        <li class="highlight with-sep"><a href="/foro" title="">FORO (GTA V)</a></li>
+                                        <li class="highlight with-sep"><a href="plataformas.html" title="">PLATAFORMAS</a></li>
+    
+				                
+                    </ul>
+                </nav>
+    
+                <a class="menu-toggle" href="#"><span>Menu</span></a>
+               
+           </div>   	
+            <!-- PARTE BAJA -->
+       </header>
+  
+           <!-- Para versión móvil y navegadores
+           ========================================================= -->
+    
+          <div id="video-popup" class="popup-modal mfp-hide">
+    
+               <div class="fluid-video-wrapper">
+                <iframe src="#" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+             </div>		     
+    
+             <a class="close-popup">Cerrar</a>         
+    
+           </div>  	 	
+    
+       </section> 
+       <section id="testimonials">
+
+        <div class="row">
+            <div class="col-twelve">
+                <h2 class="h01">Pago confirmado</h2>
+            </div>   		
+        </div>   	
+       
+        <p style="background: #e2fdf4; color: #0ebd84; font-weight: bold; padding: 15px; border: 2px solid #bdfae6; border-radius: 6px;">Compra realizada éxitosamente.</p>                          
+ 
+        <p style="background-image: url(images/fondocaja4.jpg); font-weight: 80px; font-weight: bold; padding: 15px; border-top:2px solid #ff8000; border-bottom:2px solid #ff8000;">
+        <a href="https://gs-rp.es/foro"> <input type="button" value="Acceder foro"></a>
+        <a href="index.html"> <input type="button" value="Volver inicio"></a></p>
+          </div>        
+ 
+       </div> 
+ 
+      
+ 
+    </section>
+
+</body>
+</body>
+</html>
+
+</div>
+</div>             
+                    
+</li>
+
+</ul> 
+
+</div>         
+
+</div> 
+
+</section>  
+
+  
+<div class="footer-bottom">
+
+   <div class="row">
+
+      <div class="col-twelve">
+         <div class="">
+            <p>© Copyright Gangsters - Juego de Rol, comunidad propietaria de FoCo Gaming RPG | Spanish 2022. Nuestros servicios no se encuentran afiliados a Two Takers Inc, Rockstar Games o Grand Theft Auto.</p>
+
+
+                  <hr><!--Botones final-->
+                  
+               <br />
+            <br />
+           <h5> Programado y diseñado con  <img src="images/icons/cmblockamor.png"   width="13" height="13">
+                                                       <h4> by CMBlock.</h4>
+                                                       <img src="images/logo.png"   width="180" height="80">
+            <br />
+            
+            <a href="certificadosweb.html" class="btn btn-primary btn-warning">CERTIFICADOS</a>
+                  <a href="politica.html" class="btn btn-primary btn-warning">POLITICA</a>
+           </div>
+         </section>
+
+       </div>
+
+    </div> <!-- /footer -->
+</div>
+
+</footer>
+
+<div id="preloader">
+<div id="loader"></div>
+</div>
+<audio src="link.mp3" autoplay="true" loop="true"></audio>
+<!-- Java Script
+================================================== -->
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/jquery-migrate-1.2.1.min.js"></script>
+<script src="js/plugins.js"></script>
+<script src="js/main.js"></script>
+
+</body>
